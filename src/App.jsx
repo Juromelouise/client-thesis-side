@@ -1,9 +1,18 @@
-
+import Header from "./Components/Layout/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Profile from "./Components/User/Profile";
+import Home from "./Components/Home";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} exact="true" />
+          <Route path="/profile" element={<Profile />} exact="true" />
+        </Routes>
+      </Router>
     </>
   );
 }
