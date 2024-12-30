@@ -1,13 +1,9 @@
 import {
   Button,
   Spacer,
-  //   Navbar,
   Card,
   CardBody,
-  //   NavbarBrand,
-  //   NavbarContent,
 } from "@nextui-org/react";
-// import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -15,13 +11,12 @@ export default function Home() {
       <Spacer y={20} />
 
       {/* Main Section */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-8">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          {/* <h1 className="text-4xl md:text-5xl font-bold leading-tight"> */}
             VoBo System
           </h1>
-          <h3 className="text-primary text-xl md:text-2xl">
+          <h3 className="text-primary text-xl md:text-2xl mt-2 md:mt-4">
             Smart Parking Violation Management
           </h3>
           <p className="mt-4 text-gray-600">
@@ -34,8 +29,8 @@ export default function Home() {
           </Button>
         </div>
 
-        <div className="w-full md:w-1/2">
-          <Card css={{ padding: "2rem", background: "$blue100" }}>
+        <div className="w-full md:w-1/2 mt-8 md:mt-0">
+          <Card className="p-8 bg-blue-100">
             <CardBody>
               <img
                 src="https://via.placeholder.com/300x200" // Replace with actual system-related illustration
@@ -50,7 +45,7 @@ export default function Home() {
       <Spacer y={3} />
 
       {/* Features Section */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8 px-4 md:px-8">
         <div className="w-full sm:w-1/3">
           <Card isHoverable>
             <CardBody>
@@ -88,7 +83,7 @@ export default function Home() {
       <Spacer y={2} />
 
       {/* Footer */}
-      <footer className="text-center py-4 bg-gray-100">
+      <footer className="text-center py-4 bg-gray-100 px-4 md:px-8">
         <p className="text-sm">
           © {new Date().getFullYear()} VoBo System. All Rights Reserved.
         </p>
